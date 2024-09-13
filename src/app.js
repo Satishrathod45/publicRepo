@@ -6,6 +6,8 @@ const app = express();
 require("./db/mongoose");
 app.use(bodyParser.json());
 app.use(router);
+
+
 const port = process.env.PORT;
 app.listen(port, () => {
   console.log(`server running at port ${port}`);
